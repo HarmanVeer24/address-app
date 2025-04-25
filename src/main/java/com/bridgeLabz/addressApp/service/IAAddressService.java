@@ -5,7 +5,7 @@ import com.bridgeLabz.addressApp.dto.ResponseDto;
 import com.bridgeLabz.addressApp.model.Address;
 import java.util.List;
 
-public interface IAAddressBook {
+public interface IAAddressService {
     public ResponseDto addAddressData(AddressDto addressDto);
     public ResponseDto getUser(Long id);
     public List<Address> getAllAddressData();

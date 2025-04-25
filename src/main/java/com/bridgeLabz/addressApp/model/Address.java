@@ -13,6 +13,7 @@ public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private String email;
     private String name;
     private String phoneNo;
     private String address;
@@ -23,6 +24,7 @@ public class Address {
     public void change(AddressDto user) {
 
         this.setName(user.getName());
+        this.setEmail(user.getEmail());
         this.setState(user.getState());
         this.setPhoneNo(user.getPhoneNo());
         this.setAddress(user.getAddress());

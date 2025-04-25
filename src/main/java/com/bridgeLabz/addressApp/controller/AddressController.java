@@ -2,8 +2,7 @@ package com.bridgeLabz.addressApp.controller;
 
 import com.bridgeLabz.addressApp.dto.AddressDto;
 import com.bridgeLabz.addressApp.dto.ResponseDto;
-import com.bridgeLabz.addressApp.model.Address;
-import com.bridgeLabz.addressApp.service.AddressBook;
+import com.bridgeLabz.addressApp.service.AddressService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -18,7 +17,7 @@ import java.util.List;
 public class AddressController {
 
     @Autowired
-    private AddressBook addressBook;
+    private AddressService addressBook;
 
 
     @PostMapping("/create")

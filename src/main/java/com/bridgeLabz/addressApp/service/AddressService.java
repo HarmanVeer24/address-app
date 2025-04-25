@@ -14,7 +14,7 @@ import java.util.Optional;
 
 @Service
 @Slf4j
-public class AddressBook {
+public class AddressService implements IAAddressService {
     @Autowired
     private AddressRepository addressRepository;
 
@@ -40,6 +40,7 @@ public class AddressBook {
         Address u=user.get();
         return new ResponseDto(
                 u.getName() + " " +
+                        u.getEmail() + " " +
                         u.getCity() + " " +
                         u.getPhoneNo() + " " +
                         u.getAddress() + " " +
